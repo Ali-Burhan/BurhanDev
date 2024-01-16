@@ -1,6 +1,7 @@
 import Aboutsection from './components/Aboutsection'
 import Herosection from './components/Herosection'
 import Navbar from './components/Navbar'
+import Projectsection from './components/Projectsection'
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
       <div className=' mt-24 container mx-auto px-12 py-4'>
       <Herosection/>
       <Aboutsection/>
+      <Projectsection/>
       </div>
     </main>
   )
