@@ -23,7 +23,7 @@ const Herosection = () => {
       wrapper="span"
       speed={20}
       style={{ fontSize: '0.6em', display: 'inline-block' }}
-      repeat={1}
+      repeat={5}
     />
     
       </h1>

@@ -9,8 +9,15 @@ export default function Home() {
       <Navbar/>
       <div className=' mt-24 container mx-auto px-12 py-4'>
       <Herosection/>
+      <div>
       <Aboutsection/>
+      </div>
+      <hr/>
+      <div className='mt-4'>
+        <h2 className='text-white text-4xl font-bold text-center mb-6'>My Projects</h2>
       <Projectsection/>
+      </div>
+      <hr/>
       </div>
     </main>
   )
