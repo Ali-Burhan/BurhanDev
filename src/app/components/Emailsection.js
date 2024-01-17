@@ -5,7 +5,7 @@ import LinkdinIcon from '../../../public/logo-linkedin.svg'
 const Emailsection = () => {
   return (
     <section className="grid relative md:grid-cols-2 my-12 py-24 gap-4">
-        <div className=" blur-lg absolute top-20 left-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-purple-900 to-transparent rounded-full h-80 w-80 z-0"></div>
+        <div className=" blur-lg absolute md:top-20 md:left-0 sm:top-5 sm:left-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-purple-900 to-transparent rounded-full h-80 w-80 z-0"></div>
       <div>
         <h5 className="text-3xl text-white font-mono font-extrabold my-2">
           Let&apos;s Connect
