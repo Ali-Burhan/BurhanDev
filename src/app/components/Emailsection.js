@@ -11,9 +11,9 @@ const Emailsection = () => {
           Let&apos;s Connect
         </h5>
         <p className="text-[#ADB7BE] text-lg font-mono font-extrabold mb-4 max-w-md ">
-          Thank you for visiting my portfolio website. I'm excited to connect
+          Thank you for visiting my portfolio website. I&apos;m excited to connect
           with you. Feel free to reach out for project inquiries,
-          collaborations, or just to say hello. Let's bring your ideas to life!
+          collaborations, or just to say hello. Let&apos;s bring your ideas to life!
           Contact me today.
         </p>
         <div className="socials flex flex-row gap-2">
