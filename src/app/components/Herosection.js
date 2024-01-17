@@ -28,7 +28,10 @@ const Herosection = () => {
     
       </h1>
       <p className="text-[#ADB7BE] sm:text-lg lg:text-xl mb-6 ">
-        aksjhd asdjkh asdjkhasd asdjhjksd jkashd
+      As a full stack web developer and programmer, I am passionate about
+            crafting robust and user-friendly applications. With expertise in
+            front-end and back-end technologies, I strive to deliver seamless
+            user experiences.
       </p>
       <div>
         <button className="px-6 py-3 rounded-full w-full sm:w-fit mr-4 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-300 mb-3 ">Hire Me</button>
@@ -39,7 +42,7 @@ const Herosection = () => {
 <div className="rounded-full relative bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px]">
             <Image
             className="absolute transform rounded-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-            src={'/heroimg1.png'}
+            src={'/ali.jpg'}
             alt="hero img"
             height={500}
             width={500}
