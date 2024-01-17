@@ -53,12 +53,12 @@ const Aboutsection = () => {
   return (
     <section className="text-white">
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-        <div className="">
+        <div className="hidden md:block">
           <Image src={"/about.png"} height={500} width={500} />
         </div>
         <div>
-          <h2 className="text-4xl font-bold  mb-4 underline">About Me</h2>
-          <p className="text-base md:text-lg ">
+          <h2 className="text-4xl font-bold text-center mb-4 underline">About Me</h2>
+          <p className="text-base md:text-lg text-center">
             As a full stack web developer and programmer, I am passionate about
             crafting robust and user-friendly applications. With expertise in
             front-end and back-end technologies, I strive to deliver seamless
@@ -68,7 +68,7 @@ const Aboutsection = () => {
             development of impactful and efficient web applications that make a
             positive impact in the digital world.
           </p>
-          <div className="flex justify-start flex-row mt-6">
+          <div className="flex md:justify-start flex-row justify-center mt-6">
             <Tabbuttons selectTab={()=>handleTabChange('Skills')} active={tab == 'Skills'}>
               Skills
             </Tabbuttons>
@@ -79,7 +79,7 @@ const Aboutsection = () => {
               Certifications
             </Tabbuttons>
           </div>
-          <div className="mt-8 ">
+          <div className="mt-8 text-center">
               {
                 TAB_DATA.find((t)=> t.id === tab).content
               }

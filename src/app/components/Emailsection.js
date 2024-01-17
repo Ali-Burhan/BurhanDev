@@ -5,7 +5,7 @@ import LinkdinIcon from '../../../public/logo-linkedin.svg'
 const Emailsection = () => {
   return (
     <section className="grid relative md:grid-cols-2 my-12 py-24 gap-4">
-        <div className=" blur-lg absolute md:top-20 md:left-0 sm:top-5 sm:left-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-purple-900 to-transparent rounded-full h-80 w-80 z-0"></div>
+        <div className=" blur-lg absolute md:top-1/2 md:-left-10 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-yellow-400 to-transparent rounded-full md:h-80 md:w-80 sm:w-40 sm:h-40 z-0"></div>
       <div>
         <h5 className="text-3xl text-white font-mono font-extrabold my-2">
           Let&apos;s Connect
@@ -17,8 +17,8 @@ const Emailsection = () => {
           Contact me today.
         </p>
         <div className="socials flex flex-row gap-2">
-          <Link  href={"/"}><Image className="bg-white rounded-full" src={GithubIcon} width={50} height={50}/></Link>
-          <Link  href={"/"}><Image className="bg-white " src={LinkdinIcon} width={50} height={50}/></Link>
+          <Link  href={"/"}><Image alt="Github IMG" className="bg-white rounded-full" src={GithubIcon} width={50} height={50} /></Link>
+          <Link  href={"/"}><Image alt="Linkedin Image" className="bg-white " src={LinkdinIcon} width={50} height={50}/></Link>
         </div>
       </div>
       <div className="flex flex-col gap-4">
@@ -71,7 +71,7 @@ const Emailsection = () => {
           </div>
           <button
             type="submit"
-            className="bg-purple-500 hover:bg-purple-600 text-white font-medium py-2.5 rounded-lg w-full mt-3"
+            className="bg-yellow-500 hover:bg-yellow-600 text-white font-medium py-2.5 rounded-lg w-full mt-3"
           >
             Send Message
           </button>
