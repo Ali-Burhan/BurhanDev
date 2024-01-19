@@ -25,9 +25,9 @@ const Navbar = () => {
   const [navbarOpen,setNavbarOpen] = useState(false)
   return (
 <nav className='fixed top-0 left-0 z-10 bg-[#121212] bg-opacity-100 container'>
-    <div className='flex flex-wrap items-center justify-between mx-auto p-8 '>
+    <div className='flex flex-wrap items-center justify-between mx-auto p-4 '>
     <Link href={'/'} className='sm:text-xl flex gap-3 items-center text-white font-semibold'>
-      <Image src={'/logo.png'} width={60} height={60}/>
+      <Image src={'/logo.png'} width={45} height={45}/>
       BurhanDev
     </Link>
     <div className='mobilemenu block md:hidden'>

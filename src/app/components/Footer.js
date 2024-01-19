@@ -8,7 +8,8 @@ const Footer = () => {
             width={50}
             height={50}
             />
-            <p className='text-slate-600 '>All rights reserved.</p>
+            <p className='text-yellow-500 font-mono'>All rights reserved.</p>
+            <p className='text-yellow-500 font-mono'>codewithaliburhan@gmail.com</p>
         </div>
     </footer>
   )
