@@ -5,20 +5,28 @@ const Chatgpt = () => {
   const [response,setResponse] = useState()
   const [input, setInput] = useState('')
   const [loading,setLoading] = useState(false)
+  const [error,setError] = useState(false)
   const message = () => {
     setLoading(true)
     const OpenAI = require('openai')
-  const openai = new OpenAI({apiKey:'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',dangerouslyAllowBrowser: true});
+  const openai = new OpenAI({apiKey:'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',dangerouslyAllowBrowser: true});
   
   async function main() {
-    const completion = await openai.chat.completions.create({
-      messages: [{ role: "system", content: input }],
-      model: "gpt-3.5-turbo",
-    });
-  
-    console.log(completion.choices[0]);
-    setResponse(completion.choices[0].message.content)
-    setLoading(false)
+    try {  
+      const completion = await openai.chat.completions.create({
+        messages: [{ role: "system", content: input }],
+        model: "gpt-3.5-turbo",
+      });
+      
+      console.log(completion.choices[0]);
+      setResponse(completion.choices[0].message.content)
+      setLoading(false)
+    }
+    catch (error) {
+    if(error){
+        setError(true)
+    }
+  }
   }
   
   main();
@@ -32,8 +40,7 @@ const Chatgpt = () => {
       <input type='text' className='bg-[#181818] w-1/2 border p-2 rounded-lg border-yellow-500' onChange={(e)=>setInput(e.target.value)}/>
       <button className='bg-yellow-500 ml-5 p-2 hover:bg-yellow-700 rounded-lg' onClick={message}>Submit</button>
       </div>
-      <p className='mt-10 text-center text-2xl px-20'>{
-        loading?'Loading...':
+      <p className='mt-10 text-center text-2xl px-20'>
         <TypeAnimation
       sequence={[
         // Same substring at the start will only be typed out once, initially
@@ -44,7 +51,11 @@ const Chatgpt = () => {
       speed={70}
       style={{ fontSize: '0.8em', display: 'inline-block'}}
     />
-      }</p>
+      
+      {
+        error && <h1>Sorry the free Openai's API limits are over.</h1>
+      }
+      </p>
     </div>
     <div className='md:hidden sm:block min-h-screen flex justify-center items-center mt-20 bg-[#181818]'>
         This will available soon in mobile device!!

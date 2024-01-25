@@ -1,4 +1,5 @@
 import Image from 'next/image'
+
 const Footer = () => {
   return (
     <footer className='footer border bg-[#181818] border-t-[#33353F] border-l-transparent border-r-transparent text-white'>
